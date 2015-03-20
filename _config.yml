@@ -9,8 +9,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Tomoyuki Kato Pages
-tagline:             'A site on github.io'
+title:               guruguruman.github.io
+tagline:             ''
 description:         'Fragmented entries.'
 baseurl:             /
 paginate:            5
