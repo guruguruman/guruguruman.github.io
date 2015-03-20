@@ -1,0 +1,25 @@
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Tomoyuki Kato Pages
+tagline:             'A site on github.io'
+description:         'Fragmented entries.'
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Tomoyuki Kato
+  url:               https://twitter.com/guruguruman
+  email:             
+
+# Custom vars
+version:             1.0.0

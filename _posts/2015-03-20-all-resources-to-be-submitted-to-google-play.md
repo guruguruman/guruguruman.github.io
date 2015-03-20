@@ -1,6 +1,12 @@
-# Google Play Store 必要メタデータ仕様まとめ
+---
+layout: post
+title: "Google Play Store 必要メタデータ仕様まとめ"
+description: "Google Playに提出すべきメタデータの仕様一覧"
+category: Android
+tags: [android, google play, smartphone, promotion]
+---
 
-## アイテムの詳細
+## 1. アイテムの詳細
 
 
 アイテムの詳細は、プロモーション上とても重要。12%のユーザーが毎日Google Play Storeで検索し、50%が週1で検索しているらしいです。つまり、検索から安定的に相当量のトラフィックが呼び込める可能性があります。
@@ -33,7 +39,7 @@ Google Playの場合、<hn>／<b>／</a>／<font>などのHTMLタグが利用で
 引用元：[Androidアプリ制作者必見！本気でGoogle Playの検索順位を上げるための、13のランキングアップ術](http://www.find-job.net/startup/factor-of-google-play-ranking)
 
 
-## 画像アセット
+## 2. 画像アセット
 
 
 画像アセットの全体観を掴むためには、[アプリの機能を紹介するスクリーンショットや動画について](https://support.google.com/googleplay/android-developer/answer/1078870)を読むのが役に立つと思います。

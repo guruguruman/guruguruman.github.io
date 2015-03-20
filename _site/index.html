@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Tomoyuki Kato Pages &middot; A site on github.io
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Fragmented entries.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item active" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="/archive/v1.0.0.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Tomoyuki Kato Pages</a>
+            <small>A site on github.io</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/android/2015/03/20/all-resources-to-be-submitted-to-google-play/">
+        Google Play Store 必要メタデータ仕様まとめ
+      </a>
+    </h1>
+
+    <span class="post-date">20 Mar 2015</span>
+
+    <h2>1. アイテムの詳細</h2>
+
+<p>アイテムの詳細は、プロモーション上とても重要。12%のユーザーが毎日Google Play Storeで検索し、50%が週1で検索しているらしいです。つまり、検索から安定的に相当量のトラフィックが呼び込める可能性があります。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">To follow up his statement, Jain reveals some Google Play search data for the first time. He said 12 percent of daily active users (DAU) search for apps daily, 50 percent of DAU search for apps weekly and Google sees six million unique phrases searched monthly.
+</code></pre></div>
+<p>引用元：<a href="http://www.adweek.com/socialtimes/google-discloses-how-search-for-google-play-works-for-the-first-time-12-percent-of-dau-search-for-apps-daily/539639?red=im">Google discloses how search for Google Play works for the first time; 12 percent of DAU search for apps daily</a></p>
+
+<p>記述時に地雷を踏まないため、<a href="https://support.google.com/googleplay/android-developer/answer/113474">アイテムの詳細を記述する上でのポリシーについて</a> は読んでおいたほうが良いと感じました。</p>
+
+<h3>タイトル</h3>
+
+<p>Google Play Storeにアプリのタイトルとして表示される。アプリの検索順位上昇、CTR上昇が狙えるとても重要なメタ情報。最大30文字。</p>
+
+<h3>簡単な説明</h3>
+
+<p>最大80文字。</p>
+
+<h3>詳細な説明</h3>
+
+<p>ストアで表示される説明文。最大4,000文字。</p>
+
+<p>この項目では、HTMLタグの一部が使えるようなので、テキストに装飾を加えるのはCVRを上げる点で効果的だと思います。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Google Playの場合、&lt;hn&gt;／&lt;b&gt;／&lt;/a&gt;／&lt;font&gt;などのHTMLタグが利用でき、見出を目立たせたり、強調文字の色を変えたり、リンクを張ったりできます。
+</code></pre></div>
+<p>引用元：<a href="http://www.find-job.net/startup/factor-of-google-play-ranking">Androidアプリ制作者必見！本気でGoogle Playの検索順位を上げるための、13のランキングアップ術</a></p>
+
+<h2>2. 画像アセット</h2>
+
+<p>画像アセットの全体観を掴むためには、<a href="https://support.google.com/googleplay/android-developer/answer/1078870">アプリの機能を紹介するスクリーンショットや動画について</a>を読むのが役に立つと思います。</p>
+
+<p>特に画像アセットのうち、スクリーンショットの準備に時間がかかると思います。電話用、タブレット用（7インチ・10インチ）を用意することが可能で、準備した場合それぞれ最適化されて表示されます。</p>
+
+<h3>スクリーンショット：電話用</h3>
+
+<p>タブレット以外の電話端末向けスクリーンショット。こちらの解像度は<code>640×1136</code>か<code>750×1334</code>が良いと思います。特に指定がないのと、iOS版とのリソース共用のためです。</p>
+
+<p>また、守るべき要件として下記4つが用意されています。これらに反するスクリーンショットを用意してはならないです。これは電話用スクリーンショットだけではなく、後述するタブレット用スクリーンショットでも同じです。</p>
+
+<ul>
+<li>JPEG または 24 ビット PNG（アルファなし）</li>
+<li>最小サイズ: 320 ピクセル</li>
+<li>最大サイズ: 3840 ピクセル</li>
+<li>スクリーンショットの最大サイズを最小サイズの 2 倍以上にすることはできません。</li>
+</ul>
+
+<h4>掲載イメージ</h4>
+
+<p><img src="https://storage.googleapis.com/support-kms-prod/SNP_FCD84192F36591CEB4F1237A19CCD8F76F7F_4509843_en_v2" alt="image"></p>
+
+<h3>スクリーンショット：7インチ + 10インチ</h3>
+
+<p>タブレット用スクリーンショット。電話用に同じく厳密な規定はないですが、解像度は<code>1536×2048</code>で作成するのが良いと思います。なぜなら、後述するように推奨解像度が<code>1280 x 720以上</code>なのと、こちらもiPad、iPad Miniとリソースが共用できるからです。</p>
+
+<h4>タブレット用スクリーンショットを用意する理由</h4>
+
+<p>タブレットの検索流入を最大化するには「タブレットに最適化」する必要があります。タブレットのGoogle Play Storeで検索した際の露出が増加が見込めるからです。</p>
+
+<p>アプリの掲載情報を「タブレットに最適化」するためには、タブレット用のスクリーンショットを少なくとも1つずつアップロードする必要があります。
+「タブレットに最適化」する理由は、検索時にデフォルトで「タブレットに最適化」されたアプリを検索結果に表示する事にあります。検索画面でフィルタを変更しないと「すべてのアプリ」が表示されません。タブレットに最適化されていないアプリに関しては、「スマホ向け」というようなラベル表示がつくようになってしまいます。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">- Show the core functionality of your app, not a startup or sign-in page. Wherever users will spend most of their time, that&#39;s what you should show in your screenshots.
+- Add screenshots taken on both 7-inch and 10-inch tablets.
+- Add screenshots taken in both landscape and portrait orientations, if possible.
+- Use screen captures if possible. Avoid showing actual device hardware in your screenshots.
+- The recommended resolution of your tablet screenshots is 1280 x 720 or higher in each orientation.
+- Upload as many as 8 screenshots of your tablet UI for 7-inch tablets and an additional 8 for 10-inch tablets.
+</code></pre></div>
+<p>引用元：<a href="http://developer.android.com/distribute/essentials/quality/tablets.html#google-play">Tablet App Quality - 11. Showcase Your Tablet UI in Google Play</a></p>
+
+<p>この引用でGoogleが書いている項目で重要な点は「1280 x 720 以上の解像度を期待している」ことだと思います。最低限、解像度は守れば良いと思います。</p>
+
+<h3>高解像度アイコン（512 x 512）</h3>
+
+<p>高解像度アイコンは、Google Play Store上の様々な場所で利用される。特にストアのアプリの検索一覧やランキングなどで表示されるので、かなり重要。</p>
+
+<h4>利用イメージ</h4>
+
+<p><img src="https://storage.googleapis.com/support-kms-prod/SNP_58239E7DEB1B96C3C9E75D607C6178026F04_4509860_en_v2" alt="image"></p>
+
+<h3>宣伝用画像（1,024 x 500）</h3>
+
+<p>宣伝用画像は「Google Play Store」の「ストアの掲載情報」ページの上部に表示されます。そのため、アピール力の強い画像であるべきです。また、宣伝用画像は必須であり、ストアの掲載情報に変更を加えるには宣伝用画像を提出する必要があります。</p>
+
+<ul>
+<li>アセットの枠線の近く、特にフレームの下部 3 分の 1 の範囲近くにはコピーや重要なビジュアル情報を含めないでください。</li>
+<li>フレームの垂直と水平の中心でロゴやコピーの情報を中央揃えにしてみてください。</li>
+<li>テキストを追加する場合は、大きいサイズのフォントを使用してください。</li>
+<li>画像はアプリアイコンとは別に単独で表示されることがあります。</li>
+</ul>
+
+<p>Googleの推奨する宣伝用画像の要件は上の4つ。これらに準拠しないと即BANを食らうわけではないと思いますが、準拠したほうが良いと考えます。</p>
+
+<p>参考：<a href="http://android-developers.blogspot.jp/2011/10/android-market-featured-image.html">宣伝用画像について（英語）</a></p>
+
+<h4>利用イメージ</h4>
+
+<p><img src="https://storage.googleapis.com/support-kms-prod/SNP_0EB3F1E9CE8FBE0055660FF66D7438F25CB7_6071289_en_v0" alt="image"></p>
+
+<h3>プロモーション画像（180 x 120）※任意</h3>
+
+<p>古いバージョンの Android OS（4.0 より前）でのプロモーションに使用します。この画像がなくても、ストアの掲載情報の更新を送信することは可能です。</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
