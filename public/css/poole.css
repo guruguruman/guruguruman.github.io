@@ -81,10 +81,9 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: bold;
-  line-height: 1.25;
-  color: #313131;
+  margin: 50px 0 20px;
+  color: #444;
+  line-height: 120%;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -92,21 +91,31 @@ h1 {
 }
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 30px;
+  font-weight: 700;
 }
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 24px; 
+  font-weight: 700;
 }
-h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Body text */
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  line-height: 170%;
+  margin-bottom: 1.1em;
+  font-size: 15px;
 }
 
 strong {
@@ -204,16 +213,17 @@ pre code {
   line-height: 1.4;
 }
 .gist code {
-  padding: 0;
+  padding: 5px;
   color: inherit;
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 /* Quotes */
 blockquote {
   padding: .5rem 1rem;
-  margin: .8rem 0;
+  margin-top: 1em;
+  font-size: 15px;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
 }
@@ -226,7 +236,6 @@ blockquote p:last-child {
     padding-left: 1.25rem;
   }
 }
-
 img {
   display: block;
   max-width: 100%;
