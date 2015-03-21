@@ -117,12 +117,8 @@ p {
   line-height: 170%;
   margin-bottom: 1.1em;
   font-size: 15px;
+  color: #707069;
 }
-
-strong {
-  color: #303030;
-}
-
 
 /* Lists */
 ul, ol, dl {
